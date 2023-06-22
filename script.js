@@ -30,8 +30,8 @@ const playRound = (playerSelection, computerSelection)=>{
         answer="you lost and computer win";
     }
     return answer
+
 }
-let playerSelection = "rock"
+let playerSelection = prompt("Enter rock paper or scissors")
 let computerSelection = getComputerChoice(tableau);
-let response = playRound(playerSelection, computerSelection)
-console.log(response)
+console.log(playRound(playerSelection, computerSelection))
