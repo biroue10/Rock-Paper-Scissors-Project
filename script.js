@@ -39,16 +39,19 @@ const game = () => {
 };
 // running the game function five times
 let compteur = 0;
-while (compteur < 5) {
+while (compteur < 6) {
   game();
   compteur++;
-  if (compteur === 4) {
+  if (compteur === 5) {
     let again = prompt("Do you want to play again? : ");
     again = again.toLowerCase();
     if (again === "yes") {
       compteur = 0;
       game();
     } else {
+      console.log(
+        `Computer Score ${scoreComputer} Player Score ${scorePlayer}`
+      );
       break;
     }
   }
