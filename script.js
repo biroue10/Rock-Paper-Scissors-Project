@@ -49,6 +49,7 @@ while (compteur < 6) {
       compteur = 0;
       game();
     } else {
+        console.log(`Computer's Score: ${scoreComputer} // Player's Score: ${scorePlayer}`)
       break;
     }
   }
