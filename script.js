@@ -1,7 +1,7 @@
 // We are going to build a function which will randomly return ‘Rock’, ‘Paper’ or ‘Scissors’.
 const tableau = ["rock", "paper", "scissors"];
-let scorePlayer = 0;
-let scoreComputer = 0;
+let scorePlayer = 1;
+let scoreComputer = 1;
 const getComputerChoice = (tableau) => {
   const randomIndex = Math.floor(Math.random() * tableau.length);
   // get random item
@@ -39,5 +39,16 @@ Array.from(bouton).forEach(function (element) {
     div.classList.add("element");
     const container = document.querySelector(".container2");
     container.appendChild(div);
+    console.log(scoreComputer);
+    if (scoreComputer === 5 || scorePlayer === 5) {
+      const resultat = document.createElement("div");
+      container.append(resultat);
+      resultat.classList.add("resultat");
+      const final = document.createElement("div");
+      let contenu = `Computer's Score: // Player's Score:`;
+      final.innerText = contenu;
+      final.classList.add("final");
+      container.append(final);
+    }
   });
 });
