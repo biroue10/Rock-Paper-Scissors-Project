@@ -25,32 +25,19 @@ const playRound = (playerSelection, computerSelection) => {
   }
   return answer;
 };
-const game = () => {
-  let playerSelection = "";
-  while (
-    playerSelection != "rock" &&
-    playerSelection != "paper" &&
-    playerSelection != "scissors"
-  ) {
-    playerSelection = prompt("Enter rock paper or scissors: ");
-  }
-  let computerSelection = getComputerChoice(tableau);
-  console.log(playRound(playerSelection, computerSelection));
-};
-// running the game function five times
-let compteur = 0;
-while (compteur < 6) {
-  game();
-  compteur++;
-  if (compteur === 5) {
-    let again = prompt("Do you want to play again? : ");
-    again = again.toLowerCase();
-    if (again === "yes") {
-      compteur = 0;
-      game();
-    } else {
-        console.log(`Computer's Score: ${scoreComputer} // Player's Score: ${scorePlayer}`)
-      break;
-    }
-  }
-}
+// we are going to write function that get the value for playerSelection
+let bouton = document.querySelectorAll(".bouton");
+Array.from(bouton).forEach(function (element) {
+  element.addEventListener("click", (element) => {
+    let playerSelection = element.target.textContent;
+    playerSelection = playerSelection.toLowerCase();
+    let computerSelection = getComputerChoice(tableau);
+    computerSelection = computerSelection.toLowerCase();
+    let result = playRound(playerSelection, computerSelection);
+    const div = document.createElement("div");
+    div.textContent = result;
+    div.classList.add("element");
+    const container = document.querySelector(".container2");
+    container.appendChild(div);
+  });
+});
