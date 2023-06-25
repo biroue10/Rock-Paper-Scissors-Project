@@ -49,9 +49,15 @@ while (compteur < 6) {
       compteur = 0;
       game();
     } else {
-      console.log(
-        `Computer Score ${scoreComputer} Player Score ${scorePlayer}`
-      );
+        if(scoreComputer>scorePlayer){
+            console.log(`Computer wins!\n Computer's Score: ${scoreComputer} Player's Score: ${scorePlayer}`)
+        }
+        else if(scoreComputer>scorePlayer){
+            console.log(`Player wins!\n Player's Score: ${scoreComputer} Computer's Score: ${scorePlayer}`)
+        }
+        else{
+            console.log(`It's a draw!\n Player's Score: ${scoreComputer} Computer's Score: ${scorePlayer}`)
+        }
       break;
     }
   }
