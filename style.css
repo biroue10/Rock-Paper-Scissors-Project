@@ -10,7 +10,7 @@
   align-items: center;
   width: 70%;
   margin: auto;
-  background-color: rgba(244, 164, 96);
+  background-color: rgba(0, 0, 255, 0.2);
   height: 70px;
   margin-top: 3%;
   border-radius: 20px;
@@ -65,10 +65,10 @@ h1 {
   margin-top: 2%;
   font-weight: 900;
   font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid white;
+  border: 4px white solid;
   width: 70%;
   margin: auto;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
   padding: 10px;
 }
