@@ -74,3 +74,17 @@ h1 {
   margin-top: 1%;
   border: 10px solid black;
 }
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    background-color: gray;
+    color: white;
+    font-weight: 900;
+    width: 50%;
+    margin: auto;
+    padding: 1%;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
