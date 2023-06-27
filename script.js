@@ -58,6 +58,11 @@ function modifytext(element2) {
     restart.classList.add("restart");
     container.append(restart);
     restart.addEventListener("click", remove);
+    //make three buttons unclickable
+    unclick = document.querySelectorAll(".bouton");
+    for (const el of unclick) {
+      el.classList.add("unclick");
+    }
   }
 }
 function remove() {
@@ -67,6 +72,8 @@ function remove() {
   const final = document.querySelectorAll(".final");
   const resultat = document.querySelectorAll(".resultat");
   const restart = document.querySelectorAll(".restart");
+  const unfreeze = document.querySelectorAll('.bouton')
+
   for (const el of element) {
     el.parentNode.removeChild(el);
   }
@@ -78,5 +85,8 @@ function remove() {
   }
   for (const el of restart) {
     el.parentNode.removeChild(el);
+  }
+  for(const el of unfreeze){
+    el.classList.toggle('unclick')
   }
 }
