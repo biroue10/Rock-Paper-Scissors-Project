@@ -7,21 +7,13 @@ This is a simple command-line implementation of the classic game "Rock Paper Sci
 1. Clone the repository to your local machine using the following command:
 
    ```
-   git clone https://github.com/your-username/rock-paper-scissors.git
+   git clone https://github.com/biroue10/Rock-Paper-Scissors-Project.git
    ```
 
 2. Navigate to the project directory:
 
    ```
-   cd rock-paper-scissors
-   ```
-
-3. Ensure you have Python 3 installed. If not, you can download it from the official Python website: https://www.python.org/downloads/
-
-4. Run the game by executing the Python script:
-
-   ```
-   python game.py
+   cd Rock-Paper-Scissors
    ```
 
 ## How to Play
@@ -60,6 +52,6 @@ This project was developed as part of [The Odin Project](https://www.theodinproj
 
 ## Contact
 
-If you have any questions or suggestions regarding this project, you can reach out to me at [your-email@example.com](mailto:your-email@example.com).
+If you have any questions or suggestions regarding this project, you can reach out to me at [your-email@example.com](mailto:biroueisaac@gmail.com).
 
 Happy gaming!
