@@ -105,11 +105,23 @@ h1 {
   border: 10px solid black;
 }
 footer {
+  background: -moz-linear-gradient(
+    -45deg,
+    #ce5937 0%,
+    #1c6ea4 53%,
+    #c59237 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    #ce5937 0%,
+    #1c6ea4 53%,
+    #c59237 100%
+  );
+  background: linear-gradient(135deg, #ce5937 0%, #1c6ea4 53%, #c59237 100%);
   bottom: 0;
   width: 100%;
   height: 30px; /* Height of the footer */
   text-align: center;
-  background-color: rgba(244, 164, 96);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 900;
   padding: 20px;
