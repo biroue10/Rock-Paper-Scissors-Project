@@ -72,7 +72,7 @@ function remove() {
   const final = document.querySelectorAll(".final");
   const resultat = document.querySelectorAll(".resultat");
   const restart = document.querySelectorAll(".restart");
-  const unfreeze = document.querySelectorAll('.bouton')
+  const unfreeze = document.querySelectorAll(".bouton");
 
   for (const el of element) {
     el.parentNode.removeChild(el);
@@ -86,7 +86,7 @@ function remove() {
   for (const el of restart) {
     el.parentNode.removeChild(el);
   }
-  for(const el of unfreeze){
-    el.classList.toggle('unclick')
+  for (const el of unfreeze) {
+    el.classList.toggle("unclick");
   }
 }

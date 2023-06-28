@@ -10,9 +10,7 @@
   justify-content: center;
   align-items: center;
   width: 70%;
-  margin: auto;
   background-color: rgba(0, 0, 255, 0.2);
-  height: 100px;
   margin-top: 3%;
   border-radius: 20px;
   border: 4px white solid;
@@ -35,7 +33,6 @@
   color: white;
 }
 .container2 {
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,7 +43,7 @@
   background-color: brown;
   font-weight: 900;
   margin-top: 0.1%;
-  padding: 8px;
+  padding: 4px;
   width: 50%;
   text-align: center;
   color: aliceblue;
@@ -63,20 +60,34 @@
   border-radius: 20px;
 }
 body {
-  background-color: antiquewhite;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #ce5937;
+  background: -moz-linear-gradient(
+    -45deg,
+    #ce5937 0%,
+    #1c6ea4 53%,
+    #c59237 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    #ce5937 0%,
+    #1c6ea4 53%,
+    #c59237 100%
+  );
+  background: linear-gradient(135deg, #ce5937 0%, #1c6ea4 53%, #c59237 100%);
   padding-top: 20px;
 }
 h1 {
   text-align: center;
-  margin-top: 2%;
   font-weight: 900;
   font-family: "BreezedCaps", sans-serif;
   border: 4px white solid;
   width: 85%;
-  margin: auto;
   border-radius: 10px;
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
-  padding: 10px;
   font-size: 3em;
   background-color: rgba(0, 0, 255, 0.4);
   color: white;
@@ -85,12 +96,10 @@ h1 {
   width: 50%;
   height: 1px;
   background-color: black;
-  margin: auto;
   margin-top: 1%;
   border: 10px solid black;
 }
 footer {
-  /* position: fixed; */
   bottom: 0;
   width: 100%;
   height: 30px; /* Height of the footer */
@@ -105,7 +114,7 @@ footer {
   justify-content: center;
   color: aliceblue;
   font-style: italic;
-  margin-top: 20px;
+  margin-top: auto;
 }
 .restart {
   margin-top: 40px;
